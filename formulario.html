@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario basico Valeria</title>
+	<style type="text/css">
+		body{background-color: #00ace6; color: #ffffff}
+		.titulo{font-size: 50px; text-align: center; font-family: Muthiara -Demo Version-}
+		table{background-color: #cc66ff; border: 1px solid; margin-left: auto; margin-right: auto; border-radius: 10px; width: 500px}
+		h2{font-family: Kristen ITC; font-size: 20px}
+		label{font-style: consolas; font-family: Century Gothic;}
+		input{border-radius: 5px; background-color: #000000; color: #ff0066}
+		.p2{font-family: Century Gothic; font-size: 15px;}
+		.sub{font-family: Arial Unicode MS}
+		textarea{border-radius: 5px; background-color: #000000; color: #ff0066;}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<tr><td class="titulo">Registro de usuario</td></tr>
+			<tr><td class="p2">Escribe la información que se te pide</td></tr>
+			<tr><td>
+				<h2>Datos básicos</h2>
+				<label for="nom">Nombre:</label><br>
+                <input type="text" id="nom" name="nom" placeholder="nombre" maxlength="10" required><br>
+                <label for="ape">Apellido:</label><br>
+                <input type="text" id="ape" name="ape" placeholder="apellido" maxlength="15" required>
+                <hr>
+                <label for="correo">Correo electrinico</label><br>
+                <input type="email" id="correo" name="correo" placeholder="correo@pagina.com" required><br>
+                <label for="pwd">Contraseña:</label><br>
+                <input type="password" id="pws" name="pws" placeholder="contraseña" required>
+			</td></tr>
+			<tr>
+				<td>
+					<p class="sub">Sexo:</p>
+					<input type="radio" id="masculino" name="genero" value="m">
+                    <label for="masculino">Male</label><br>
+                    <input type="radio" id="femenino" name="genero" value="f">
+                    <label for="femenino">Female</label><br>
+                    <input type="radio" id="other" name="genero" value="o">
+                    <label for="otro">Other</label>
+
+                    <p class="sub">Pasatiempos</p>
+                    <input type="checkbox" id="pasa1" name="Pasatiempos" value="Series">
+                    <label for="pasa1"> Series</label><br>
+                    <input type="checkbox" id="pasa2" name="Pasatiempos" value="Cpcinar">
+                    <label for="pasa2"> Cocinar</label><br>
+                    <input type="checkbox" id="pasa3" name="Pasatiempos" value="Pasear a mi perro">
+                    <label for="pasa3"> Pasear a mi perro</label>
+                    <hr>
+                    <label for="idiom">Idioma:</label>
+                    <select id="idiom" name="idiom">
+                        <option value="esp">Español</option>
+                        <option value="ing">Ingles</option>
+                        <option value="fra">Frances</option>
+                        <option value="port">Portugues</option>
+                    </select>
+                    <p class="sub">Comentarios</p>
+                    <textarea name="message" rows="10" cols="30">
+                    
+                    </textarea>
+                    <br>
+                    <input type="submit">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
